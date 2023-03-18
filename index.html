@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WifiRouter's Homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/98.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div id="loginscreen" class="flexbox">
+        <div class="window" style="width: 430px; height: 130px; display: block;">
+            <div class="title-bar">
+              <div class="title-bar-text">Welcome to Windows</div>
+              <div class="title-bar-controls">
+                <button aria-label="Help" onclick="window.alert('You can enter any username/password combo and it will work :)');"></button>
+                <button aria-label="Close" onclick="startup();"></button>
+              </div>
+            </div>
+            <div class="window-body">
+              <div style="display: flex;">
+                <img src="img/login-icon.png" alt="login-icon" class="login-icon" height="54px" width="52px">
+                <div class="passwordbox">
+                  <p>Type a user name and password to log on to Windows.</p>
+                  <div class="loginprompts" style="margin-top: 20px;">
+                    <div class="field-row">
+                      <label for="text17"><u>U</u>ser name: </label>
+                      <input id="text17" type="text" value="Visitor" style="margin-left: 12px; width: 140px;"/>
+                    </div>
+                    <div class="field-row">
+                      <label for="text17"><u>P</u>assword: </label>
+                      <input id="text17" type="password"  style="margin-left: 15px;  width: 140px;"/>
+                    </div>
+                  </div>
+                </div>
+                <div class="buttonrow" style="margin-left: 12px; width: 0; height: 0; margin-top: 2px;">
+                  <button onclick="startup();">OK</button>
+                  <button style="margin-top: 5px;" onclick="startup();">Cancel</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div class="taskbar">
+      
+    </div>
 
+    <script src="script.js"></script>
+</body>
+
+</html>
